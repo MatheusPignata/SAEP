@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <title>Tela do Professor</title>
+</head>
+<body>
+
+    <header>
+        <p id="nomeProfessor">Nome do Professor</p>
+        <button class="btn">Sair</button>
+    </header>
+    
+    <span>
+        <button class="btn">Cadastrar turma</button>
+    </span>
+
+    <div class="main">
+        <div><h3>Turmas</h3></div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width: 10%">Número</th>
+                    <th style="text-align: left;">Nome</th>
+                    <th style="text-align: left; width: 20%">Ação</th>
+                </tr>
+            </thead>
+            <tbody class="turmas">
+                <tr class="turma model">
+                    <td class="turmaId" style="text-align: center;">1</td>
+                    <td class="turmaNome">Nome da turma</td>
+                    <td>
+                        <button class="btn-ex" onclick="excluir(this)">Excluir</button>
+                        <button class="btn-vz" onclick="visualizar(this)">Visualizar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<script src ='../script/main.js'></script>
+</html>
